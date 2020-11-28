@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posty</title>
+</head>
+<body>
+<div> <a href="new.html">New</a> </div>
+<div>
+    {% for post in posts %}
+       <div><img src="{{post.photo_url}}"></div>
+       <div>{{post.name}}</div>
+       <div>{{post.body}}</div>
+       <div><a href="edit.html">Edit</a> |
+            <a href="delete.html">Delete</a>
+       </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+</body>
+</html>
